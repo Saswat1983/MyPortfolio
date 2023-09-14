@@ -1,0 +1,357 @@
+.App {
+  text-align: center;
+}
+
+body{
+  font-family: monospace;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.font-family-monospace{
+  font-family: monospace;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.fontSize-large-italic{
+  font-size: large;
+  font-style: italic;
+}
+
+.gear {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background: #fff;
+  border-radius: 50%;
+  animation-name: spin;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.gear .center {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  background: goldenrod;
+  border-radius: 50%;
+}
+
+.tooth {
+  position: absolute;
+  top: -25px;
+  left: 75px;
+  z-index: 1;
+  width: 45px;
+  height: 250px;
+  background: #fff;
+}
+
+.tooth:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.tooth:nth-child(3) {
+  transform: rotate(90deg);
+}
+
+.tooth:nth-child(4) {
+  transform: rotate(135deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.headerNameArea {
+  text-align: center;
+  width: 80%;
+  height: 70px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font: xx-large bold;
+  background-color: white;
+  position: fixed;
+  z-index:99;
+}
+
+.BannerNameArea{
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font: x-large bold;
+  font-style: italic;
+  background-color: white;
+
+}
+
+.navigationBarSection {
+  padding-top: 50px;
+  text-align: left;
+}
+
+.navigationBarSection li {
+  width: 100%;
+  text-decoration: none;
+  outline: none;
+  display: block;
+  float: left;
+  font-size: 18px;
+  line-height: 36px;
+  color: #fff;
+  border-radius: 0px 5px 5px 0px;
+  padding: 0 10px 0 60px;
+  background: #666;
+  background: linear-gradient(to left,
+  rgba(137, 127, 127,0) 0%,
+  rgb(137, 127, 127,1) 10%,
+  rgba(137, 127, 127,1) 30%,
+  rgba(137, 127, 127,0) 100%
+);
+  position: relative;
+  transition: width 2s;
+}
+
+
+
+.navigationBarSection li>a, .navigationBarSection li {
+  text-decoration: none;
+  color: white;
+  font-family: unset;
+  cursor:pointer;
+}
+
+.nav>li:hover {
+  background: white;
+color:black;
+opacity:0.3;
+}
+
+.nav>li>a:hover, .nav>li:hover {
+  background: white;
+  width: 190%;
+  color:black;
+}
+
+.skillsWrapper {
+	display: flex;
+}
+
+.skillsWrapperItem {
+	background: white;
+  opacity: 0.7;
+	border: 2px solid #FFF;
+	position: relative;
+	height: 450px;
+	transition: all .3s;
+	flex-grow: 1;
+	z-index: 1;
+	transition: all .8s;
+	border-radius: 10px;
+	&:hover {
+		flex-grow: 20;
+    opacity:1;
+	}
+}
+
+.text-center-aligned{
+  text-align: center;
+}
+.skillItems{
+  width:fit-content;
+  padding:0px 5px 0px 5px;
+  border: 2px solid bisque;
+  border-radius: 10px;
+  text-decoration: none;
+  list-style-type: none;
+  background-color:white;
+  color:black;
+  font-size: 14px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.achievements-background{
+  background-color: white;
+}
+
+.signature{
+  max-width: 300px;
+  text-align: right;
+}
+
+.upperCaseFonts{
+  text-transform: uppercase;
+}
+.text-aligned-left{
+  text-align: left;
+}
+
+.fontSize-xlarge{
+  font-size:x-large;
+}
+
+.feedbackCard{
+  --grad-size: min(270vh, 90vw);
+	width: 500px;
+	aspect-ratio: 1;
+	margin: min(5vh, 1.67vw);
+	border-radius: 15px;
+	background-image: radial-gradient(#fff 0%, red 30%, #222 50%);
+	background-color: #222;
+	background-position: calc(var(--mouse-x) * 1px - var(--grad-size) / 2)
+		calc(var(--mouse-y) * 1px - var(--grad-size) / 2);
+	transition: background-position 2s cubic-bezier(0, 0, 0, 1);
+	background-attachment: fixed;
+	background-size: var(--grad-size) var(--grad-size);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	cursor: pointer;
+  color:white
+}
+
+.feedbackCard::before {
+	content: "";
+	width: min(90vh, 30vw);
+	aspect-ratio: 1;
+	position: absolute;
+	background-size: 300% 300%;
+	background-position: 100% 100%;
+	transition: background-position 0.3s linear;
+}
+
+.feedbackCard:hover::before {
+	background-position: 0% 0%;
+}
+
+
+.feedbackCard > :first-child {
+	mix-blend-mode: multiply;
+	position: absolute;
+	filter: blur(min(3vh, 1vw)) brightness(0%);
+	transition: filter 0.5s ease;
+  color:white;
+}
+
+.feedbackCard:hover > :first-child {
+	filter: blur(min(4.5vh, 1.5vw)) brightness(100%);
+}
+
+.feedbackCard > :nth-child(2) {
+	mix-blend-mode: plus-lighter;
+}
+
+.outside-counter-circle{
+border-radius: 10px;
+  color: #fff;
+  margin: 0 auto 0;
+  font-family: "Josefin Sans";
+  background-image: radial-gradient(#fff 0%, #499f68 30%, #222 50%);
+}
+.counter-circle{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 1.5%;
+  font-size: 24px;
+  background-color: #f4f4f4;
+  color: #499f68;
+  width: 150px;
+  border-radius: 50%;
+  height: 150px;
+  vertical-align: middle;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons-container {
+
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2fe;
+}
+
+.social-icons a {
+  display: inline-flex;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 40px;
+  margin: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
+  background-size: 100% 200%;
+  background-position: 0% 5%;
+
+  transition: background-position 0.5s, color 0.5s;
+}
+
+.social-icons a:nth-child(1) {
+  color: #1976d3;
+  background-image: linear-gradient(#fff 50%, #1976d3 50%);
+}
+
+.social-icons a:nth-child(2) {
+  color: #db6f44;
+  background-image: linear-gradient(#fff 50%, #db6f44 50%);
+}
+
+.social-icons a:nth-child(3) {
+  color: #000;
+  background-image: linear-gradient(#fff 50%, #000 50%);
+}
+
+.social-icons a:nth-child(4) {
+  color: #03a9f5;
+  background-image: linear-gradient(#fff 50%, #03a9f5 50%);
+}
+
+.social-icons a:hover {
+  background-position: 0% 100%;
+  color: #fff;
+}
+
+.set-width-100{
+  width:100%
+}
