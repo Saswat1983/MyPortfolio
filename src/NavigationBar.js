@@ -1,7 +1,5 @@
 export default function NavigationBar() {
-    var navigateToRightSection = function () {
-        alert('Hi');
-    }
+
     return (
         <div class="row">
 
