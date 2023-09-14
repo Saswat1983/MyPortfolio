@@ -15,8 +15,8 @@ export default function Footer() {
                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/Saswat1983">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a target="_blank" rel="noopener noreferrer" href="">
-                        <i class="fab fa-facebook"></i>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/imsaswatbehera/">
+                        <i class="fab fa-instagram"></i>
                     </a>
                     <a href="mailto:saswat1983@gmail.com">
                         <i class="fab fa-envelope"></i>
