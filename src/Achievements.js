@@ -1,4 +1,4 @@
-export default function () {
+export default function Achievements() {
     return (<div class="row achievements-background" id="myachievements">
         <h3>ACHIEVEMENTS</h3>
         <div class="col-sm-6">

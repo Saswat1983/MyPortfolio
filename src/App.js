@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import InterestingFacts from './InterestingFacts';
 import Feedbacks from './Feedbacks';

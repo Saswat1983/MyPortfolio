@@ -1,4 +1,4 @@
-export default function (imageProp) {
+export default function InterestingFacts(imageProp) {
     return (<div class="row" id="interestingfacts">
         <h3>INTERESTING FACTS ABOUT ME</h3>
 

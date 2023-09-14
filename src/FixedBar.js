@@ -1,5 +1,5 @@
 import './App.css'
-export default function (nameProp) {
+export default function FixedBar(nameProp) {
     return (<div>
         <div class="row font-family-monospace">
             <div class="headerNameArea">

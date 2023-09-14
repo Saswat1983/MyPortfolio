@@ -1,4 +1,4 @@
-export default function () {
+export default function NavigationBar() {
     var navigateToRightSection = function () {
         alert('Hi');
     }

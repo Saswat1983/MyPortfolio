@@ -1,4 +1,4 @@
-export default function () {
+export default function Footer() {
     return (<div class="row" id="connectwithme">
 
         <div class="social-icons-container">
@@ -9,13 +9,13 @@ export default function () {
             <div class="row">
 
                 <div class="social-icons">
-                    <a target="_blank" href="https://www.linkedin.com/in/saswatbehera/">
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/saswatbehera/">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a target="_blank" href="https://github.com/Saswat1983">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/Saswat1983">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a target="_blank" href="">
+                    <a target="_blank" rel="noopener noreferrer" href="">
                         <i class="fab fa-facebook"></i>
                     </a>
                     <a href="mailto:saswat1983@gmail.com">

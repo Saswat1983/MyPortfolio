@@ -1,4 +1,4 @@
-export default function (details) {
+export default function Feedbacks(details) {
     document.body.onmousemove = (e) => {
         document.body.style.setProperty("--mouse-x", e.clientX);
         document.body.style.setProperty("--mouse-y", e.clientY);
@@ -36,7 +36,7 @@ export default function (details) {
                 <br /> <i>- Aarti Desai, Product Manager</i>
             </div>
             <div class="col-sm-10 fontSize-xlarge">
-                That ain't all... more awesome feedbacks are available at <a target="_blank" href="https://www.linkedin.com/in/saswatbehera/">
+                That ain't all... more awesome feedbacks are available at <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/saswatbehera/">
             <i class="fab fa-linkedin"></i>
           </a>
             </div>

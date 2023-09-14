@@ -1,4 +1,4 @@
-export default function (skillDetail) {
+export default function Skills(skillDetail) {
     if (skillDetail.skillType === "technical") {
         return (<div class="row skillsWrapper" id="technicalSkills">
             <div class="col-sm-4 skillsWrapperItem">
