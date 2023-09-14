@@ -4,7 +4,6 @@ import InterestingFacts from './InterestingFacts';
 import Feedbacks from './Feedbacks';
 import NavigationBar from './NavigationBar';
 import Skills from './Skills';
-import AboutMe from './AboutMe';
 import FixedBar from './FixedBar';
 import Banner from './Banner';
 import Achievements from './Achievements';
@@ -23,7 +22,6 @@ function App() {
       <Achievements />
       <Feedbacks />
       <InterestingFacts />
-      <AboutMe />
       <Footer />
     </div>
   );
