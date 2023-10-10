@@ -6,9 +6,9 @@ export default function Skills(skillDetail) {
                 <div class="col-sm-4">
                     <div className="skillItems">HTML</div>
                     <div className="skillItems">CSS</div>
-                    <div class="skillItems">React JS</div>
-                    <div class="skillItems">AngularJS</div>
-                    <div class="skillItems">Javascript</div>
+                    <div className="skillItems">React JS</div>
+                    <div className="skillItems">AngularJS</div>
+                    <div className="skillItems">Javascript</div>
                     <div className="skillItems">JQuery</div>
                     <div className="skillItems">Ajax</div>
                     <div className="skillItems">NodeJS</div>
@@ -17,11 +17,14 @@ export default function Skills(skillDetail) {
                     <div className="skillItems">SQL Server</div>
                     <div className="skillItems">PostgreSQL</div>
                     <div className="skillItems">REST API</div>
-                </div>
-                <div class="col-sm-4">
                     <div className="skillItems">OOPS</div>
                     <div className="skillItems">JSON</div>
-                    <div className="skillItems">SOAP</div>
+                </div>
+                <div class="col-sm-4">
+                    <div className="skillItems">Kubernetes</div>
+                    <div className="skillItems">Docker</div>
+                    <div className="skillItems">MicroK8s</div>
+                    <div className="skillItems">Minikube</div>
                     <div className="skillItems">Microservices</div>
                     <div className="skillItems">Design Patterns</div>
                     <div className="skillItems">Splunk</div>
@@ -34,6 +37,7 @@ export default function Skills(skillDetail) {
                     <div className="skillItems">Stash</div>
                 </div>
                 <div class="col-sm-4">
+                    <div className="skillItems">SOAP</div>
                     <div className="skillItems">GitHub</div>
                     <div className="skillItems">Bitbucket</div>
                     <div className="skillItems">Confluence</div>
